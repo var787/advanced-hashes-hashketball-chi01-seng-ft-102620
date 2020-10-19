@@ -166,8 +166,8 @@ end
 def player_numbers(team)
   game_hash.each do |team,info|
     if info[:team_name]==team
-      
-      
+
+
     end
   end
 end
