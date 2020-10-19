@@ -181,8 +181,7 @@ def player_numbers(team_name)
     info[:players].map do |n|
       if n[:player_name] == player_name
          pstats=n
-         
-      end
+       end
      end
     end
     pstats
