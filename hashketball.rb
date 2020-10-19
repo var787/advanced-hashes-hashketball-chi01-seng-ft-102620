@@ -161,6 +161,7 @@ def team_names
         tnames.push(info[:team_name])
         #binding.pry
  end
+ return tnames
 end
 
 def player_numbers(team)
