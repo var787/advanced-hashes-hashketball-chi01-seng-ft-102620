@@ -190,17 +190,16 @@ def player_numbers(tname)
   end
 
   def big_shoe_rebounds
-big_rebound=0
+shoes=0
 game_hash.collect do |team, info|
   info[:players].collect do |n|
-    if n[:shoe]>big_rebound
-      if big_rebound=n[:shoe]
+    if n[:shoe]>shoes
+        shoes=n[:shoe]
          player_rebound=n[:rebounds]
-       end
       #binding.pry
   end
 end
 end
-n[:rebounds]
+player_rebound
 binding.pry
 end
