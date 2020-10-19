@@ -157,6 +157,6 @@ end
 def team_names
   game_hash.map  do |team,info|
         info[:team_name]
-        binding.pry
+        #binding.pry
  end
 end
