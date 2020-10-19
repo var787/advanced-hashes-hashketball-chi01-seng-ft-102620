@@ -181,7 +181,6 @@ def player_numbers(tname)
     info[:players].each do |n|
       if n[:player_name] == player_name
         binding.pry
-        return player.delete_if { |stat, value| [:player_name].include?(stat)}
       end
     end
   end
