@@ -200,3 +200,15 @@ def player_numbers(team_name)
  end
 rebounds
 end
+
+def most_points_scored
+  points=0
+  game_hash.map do |team, info|
+  info[:players].map do |n|
+  if n[:points]>points
+      points=n[:shoe]
+   end
+  end
+ end
+points
+end
