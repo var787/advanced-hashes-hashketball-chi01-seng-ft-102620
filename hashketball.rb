@@ -171,6 +171,7 @@ def player_numbers(tname)
         info[:players].each do |n|
        points=n[:points]
        points
+       binding.pry
      end
    end
  end
