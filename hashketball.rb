@@ -194,6 +194,7 @@ big_rebound=[]
 game_hash.collect do |team, info|
   info[:players].collect do |n|
     if n[:shoe]>big_rebound
+      binding.pry
       big_rebound=n[:shoe]
       binding.pry
   end
