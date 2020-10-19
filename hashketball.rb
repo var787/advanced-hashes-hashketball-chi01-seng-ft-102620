@@ -169,7 +169,7 @@ def player_numbers(tname)
     game_hash.each do |team,info|
       if info[:team_name]==tname
         info[:players].each do |n|
-       points=n[:points]
+       points=n[:number]
        points
        binding.pry
      end
