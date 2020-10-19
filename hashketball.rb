@@ -166,12 +166,13 @@ end
 
 def player_numbers(tname)
   numbers=[]
-  game_hash.each do |team,info|
-       info.each do |n|
-      if info[:team_name]==team
-        return numbers.push(n[:number])
-      end
-    end
-end
-numbers
-end
+    game_hash.each do |team,info|
+      if info[:team_name]==tname
+        info[:players].each do |n|
+       points=n[:points]
+       points
+     end
+   end
+ end
+ end
+        
