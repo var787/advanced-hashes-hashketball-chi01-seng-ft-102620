@@ -155,16 +155,19 @@ def team_colors(name)
 end
 
 def team_names
-  game_hash.map  do |team,info|
+  tnames=[]
+  game_hash.each  do |team,info|
         info[:team_name]
+        tnames.push(info[:team_name])
         #binding.pry
  end
 end
 
 def player_numbers(team)
-  game_hash.map do |team,info|
-    if       info[:team_name]==team
-      return info[:number]
+  game_hash.each do |team,info|
+    if info[:team_name]==team
+      
+      
     end
   end
 end
