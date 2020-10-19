@@ -183,6 +183,7 @@ def player_numbers(tname)
       if key[:player_name] == player_name
         pstats=key
         pstats
+        binding.pry
       end
      end
     end
@@ -190,4 +191,5 @@ def player_numbers(tname)
   end
 
   def big_shoe_rebounds
+big_rebound=[]
   end
