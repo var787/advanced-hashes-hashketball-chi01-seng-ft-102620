@@ -189,4 +189,3 @@ def player_numbers(tname)
     end
     binding.pry
   end
-end
