@@ -202,7 +202,6 @@ rebounds
 end
 
 def most_points_scored
-  binding.pry
   points=0
   game_hash.map do |team, info|
   info[:players].map do |n|
@@ -213,5 +212,4 @@ def most_points_scored
   end
  end
 points
-binding.pry
 end
