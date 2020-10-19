@@ -207,7 +207,6 @@ def most_points_scored
   info[:players].map do |n|
   if n[:points]>points
       points=n[:points]
-      binding.pry
    end
   end
  end
