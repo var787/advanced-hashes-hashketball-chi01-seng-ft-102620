@@ -163,10 +163,10 @@ def team_names
  return tnames
 end
 
-def player_numbers(tname)
+def player_numbers(team_name)
   pnumbers=[]
     game_hash.map do |team,info|
-      if info[:team_name]==tname
+      if info[:team_name]==team_name
          info[:players].map do |n|
        pnumbers.push(n[:number])
     end
