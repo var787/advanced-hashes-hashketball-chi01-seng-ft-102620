@@ -183,9 +183,10 @@ def player_numbers(tname)
       if n[:player_name] == player_name
         pstats=info[:players]
         pstats
+      end
 
-        binding.pry
       end
     end
+    binding.pry
   end
 end
