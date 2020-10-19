@@ -190,7 +190,7 @@ def player_numbers(tname)
   end
 
   def big_shoe_rebounds
-big_rebound=[]
+big_rebound=0
 game_hash.collect do |team, info|
   info[:players].collect do |n|
     binding.pry
