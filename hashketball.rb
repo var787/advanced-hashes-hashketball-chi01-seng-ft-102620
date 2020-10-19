@@ -178,6 +178,7 @@ def player_numbers(tname)
 
  def player_stats(player_name)
    if game_hash[:home][:players].include?(player_name)
+     binding.pry
      game_hash[:home][:players][player_name]
      binding.pry
    end
