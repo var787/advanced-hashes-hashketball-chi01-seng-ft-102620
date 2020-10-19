@@ -167,11 +167,11 @@ def player_numbers(tname)
   numbers=[]
     game_hash.map do |team,info|
       if info[:team_name]==tname
-        info[:players].map do |n|
+         info[:players].map do |n|
        numbers.push(n[:number])
     end
    end
- end
+  end
  numbers
  end
 
