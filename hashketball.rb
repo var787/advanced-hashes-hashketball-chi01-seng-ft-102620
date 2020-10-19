@@ -206,7 +206,7 @@ def most_points_scored
   game_hash.map do |team, info|
   info[:players].map do |n|
   if n[:points]>points
-      points=n[:shoe]
+      points=n[:points]
       binding.pry
    end
   end
