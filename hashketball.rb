@@ -128,6 +128,7 @@ end
 
 def num_points_scored(player_name)
   #binding.pry
-  game_hash[:home][:players][:player_name][:points]
+  game_hash[:home][:players][0][:points]=points
+  points
   #binding.pry
 end
