@@ -185,8 +185,6 @@ def player_numbers(tname)
         pstats=key
         pstats
       end
-
-      end
+     end
     end
-    binding.pry
   end
