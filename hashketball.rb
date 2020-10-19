@@ -175,3 +175,14 @@ def player_numbers(tname)
  end
  numbers
  end
+
+ def player_stats(player_name)
+   game_hash.each do |team,info|
+         info[:players].each do |n| #Access the elements in the players array(which are also hashes). Iterate over each element
+       if n[:player_name]==(player_name)
+         return n[:player_name]
+     end
+    end
+   end
+ end
+ 
