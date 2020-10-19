@@ -212,3 +212,6 @@ def most_points_scored
  end
 points
 end
+
+#for winning team sum up points for both and compare
+#longest name use .count or split and count
