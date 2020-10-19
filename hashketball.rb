@@ -160,6 +160,6 @@ def team_names
     t_name
     #binding.pry
   end
-  return t_name
+  t_name
   #binding.pry
 end
