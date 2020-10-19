@@ -156,10 +156,6 @@ end
 
 def team_names
   game_hash.each do |team,team_info|
-    t_name=team_info[:team_name]
-    t_name
-    #binding.pry
-  end
-  t_name
-  #binding.pry
+    team_info[:team_name]
+ end
 end
