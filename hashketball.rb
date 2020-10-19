@@ -146,9 +146,9 @@ def shoe_size(player_name)
   end
 end
 
-def team_colors(name)
+def team_colors(team_name)
   game_hash.each do |team,info|
-    if       info[:team_name]==name
+    if       info[:team_name]==team_name
       return info[:colors]
     end
   end
@@ -197,10 +197,8 @@ game_hash.collect do |team, info|
     if n[:shoe]>shoes
         shoes=n[:shoe]
          rebounds=n[:rebounds]
-      #binding.pry
   end
 end
 end
 rebounds
-#binding.pry
 end
