@@ -155,12 +155,11 @@ def team_colors(team_name)
 end
 
 def team_names
-  tnames=[]
+  tnames=[] #Alter original array
   game_hash.map do |team,info|
         info[:team_name]
         tnames.push(info[:team_name])
-        #binding.pry
- end
+  end
  return tnames
 end
 
