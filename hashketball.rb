@@ -125,3 +125,7 @@ def game_hash
     }
   }
 end
+def num_points_scored(name)
+  game_hash.each do |team,team_values|
+    binding.pry
+  end
