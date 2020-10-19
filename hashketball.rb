@@ -177,9 +177,13 @@ def player_numbers(tname)
  end
 
  def player_stats(player_name)
-   if game_hash[:home][:players].include? (player_name)
-     binding.pry
-     game_hash[:home][:players][player_name]
-     binding.pry
-   end
+  game_hash.each do |team, info|
+    info[:players].each do |n|
+      if n[:player_name] == player_name
+        binding.pry
+        return player.delete_if { |stat, value| [:player_name].include?(stat)}
+      end
+    end
+  end
+end
  end
