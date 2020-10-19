@@ -181,8 +181,8 @@ def player_numbers(tname)
   game_hash.collect do |team, info|
     info[:players].collect do |key,value|
       binding.pry
-      if value[:player_name] == player_name
-        pstats=info[:players]
+      if key[:player_name] == player_name
+        pstats=key
         pstats
       end
 
