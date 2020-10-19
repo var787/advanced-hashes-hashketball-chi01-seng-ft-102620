@@ -196,7 +196,7 @@ game_hash.collect do |team, info|
   info[:players].collect do |n|
     if n[:shoe]>shoes
         shoes=n[:shoe]
-         player_rebound=n[:rebounds]
+         player_rebound<<n[:rebounds]
       #binding.pry
   end
 end
