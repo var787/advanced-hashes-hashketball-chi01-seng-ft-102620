@@ -179,12 +179,8 @@ def player_numbers(tname)
  def player_stats(player_name)
    pstats={}
    game_hash.each do |team,info|
-         info[:players].each do |n|
-           #binding.pry
-       if n[:player_name]==(player_name)
-          pstats=info[:players]
-         pstats
+     info.each do |key,value|
+       binding.pry
      end
-    end
    end
  end
