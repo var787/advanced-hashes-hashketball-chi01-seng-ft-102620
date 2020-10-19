@@ -135,3 +135,13 @@ def num_points_scored(player_name)
    end
   end
 end
+
+def shoe_size(player_name)
+  game_hash.each do |team,team_info|
+    team_info[:players].each do |n| #Access the elements in the players array(which are also hashes). Iterate over each element
+      if n[:player_name]==(player_name)
+        return n[:shoe]
+    end
+   end
+  end
+end
