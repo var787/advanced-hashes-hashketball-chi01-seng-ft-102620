@@ -180,8 +180,8 @@ def player_numbers(team_name)
   game_hash.map do |team, info|
     info[:players].map do |n|
       if n[:player_name] == player_name
-        pstats=n
-        pstats
+         pstats=n
+         pstats
       end
      end
     end
