@@ -182,7 +182,7 @@ def player_numbers(tname)
          info[:players].each do |n|
            #binding.pry
        if n[:player_name]==(player_name)
-         pstats<<(info[:players])
+          pstats=info[:players]
          pstats
      end
     end
