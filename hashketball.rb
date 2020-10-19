@@ -184,5 +184,6 @@ def player_numbers(tname)
          n[:player]
        binding.pry
      end
+     end
    end
  end
