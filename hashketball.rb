@@ -171,8 +171,9 @@ def player_numbers(tname)
         info[:players].each do |n|
        numbers.push(n[:number])
        numbers
-       binding.pry
+       #binding.pry
      end
    end
  end
+ numbers
  end
