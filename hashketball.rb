@@ -180,6 +180,8 @@ def player_numbers(tname)
    pstats={}
    game_hash.each do |team,info|
      info.each do |key,value|
+       key.each do |n|
+         n[:player]
        binding.pry
      end
    end
