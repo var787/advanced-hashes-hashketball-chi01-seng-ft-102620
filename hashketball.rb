@@ -180,6 +180,7 @@ def player_numbers(tname)
   game_hash.each do |team, info|
     info[:players].each do |n|
       if n[:player_name] == player_name
+        return info[:players]
         binding.pry
       end
     end
