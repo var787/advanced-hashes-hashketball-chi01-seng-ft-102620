@@ -156,7 +156,7 @@ end
 
 def team_names
   tnames=[]
-  game_hash.each  do |team,info|
+  game_hash.map do |team,info|
         info[:team_name]
         tnames.push(info[:team_name])
         #binding.pry
