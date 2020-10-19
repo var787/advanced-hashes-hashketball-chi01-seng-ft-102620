@@ -133,4 +133,5 @@ def num_points_scored(player_name)
         return name[:points]
     #binding.pry
   end
+  end
 end
