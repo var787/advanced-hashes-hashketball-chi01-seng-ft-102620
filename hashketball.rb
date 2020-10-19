@@ -202,5 +202,5 @@ game_hash.collect do |team, info|
 end
 end
 rebounds
-binding.pry
+#binding.pry
 end
