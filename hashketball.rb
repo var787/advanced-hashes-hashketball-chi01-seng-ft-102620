@@ -177,10 +177,13 @@ def player_numbers(tname)
  end
 
  def player_stats(player_name)
-  game_hash.each do |team, info|
-    info[:players].each do |n|
+   pstats={}
+  game_hash.collect do |team, info|
+    info[:players].collect do |n|
       if n[:player_name] == player_name
-        return info[:players]
+        pstats=info[:players]
+        pstats
+      
         binding.pry
       end
     end
