@@ -164,7 +164,7 @@ def team_names
  return tnames
 end
 
-def player_numbers(team)
+def player_numbers(tname)
   numbers=[]
   game_hash.each do |team,info|
     info[:team_name].each do |n|
