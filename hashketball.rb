@@ -207,6 +207,7 @@ def most_points_scored
   info[:players].map do |n|
   if n[:points]>points
       points=n[:shoe]
+      binding.pry
    end
   end
  end
