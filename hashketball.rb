@@ -170,9 +170,7 @@ def player_numbers(tname)
       if info[:team_name]==tname
         info[:players].each do |n|
        numbers.push(n[:number])
-       numbers
-       #binding.pry
-     end
+    end
    end
  end
  numbers
