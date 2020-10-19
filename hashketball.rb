@@ -128,9 +128,9 @@ end
 
 def num_points_scored(player_name)
   game_hash.each do |team,team_info|
-    team_info[:players].each do |name|
+    team_info[:players].each do |n| #Access the elements in the players array(which are also hashes). Iterate over each element in
       binding.pry
-      if name[:player_name]==(player_name)
+      if n[:player_name]==(player_name)
         return name[:points]
     end
    end
