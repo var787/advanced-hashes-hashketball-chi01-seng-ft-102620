@@ -177,13 +177,8 @@ def player_numbers(tname)
  end
 
  def player_stats(player_name)
-   pstats={}
-   game_hash.each do |team,info|
-     info.each do |key,value|
-       key.each do |n|
-         n[:player]
-       binding.pry
-     end
-     end
+   if game_hash[:home][:players].include?(player_name)
+     game_hash[:home][:players][player_name]
+     binding.pry
    end
  end
